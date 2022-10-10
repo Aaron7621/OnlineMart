@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Data Science Books</h1>
+<br>
+<br>
+<div class="row">
+{% for book in books %}
+<div class="col">
+    <div class="card" style="width: 10rem;">
+    <img src="{{ book.image_url }}" class="card-img-top" alt="no available"
+    width="200"
+    height="250">
+        <div class="card-body">
+        <h7 class="card-title">{{ book.name }}</h7>
+        <p class="card-text">Price: ${{ book.price }}</p>
+        <a href="#" class="btn btn-primary">Book URL</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

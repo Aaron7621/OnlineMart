@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Movie in Singapore</h1>
+<br>
+<br>
+<div class="row">
+{% for movie in movies %}
+<div class="col">
+    <div class="card" style="width: 10rem">
+    <img src="{{ movie.poster_url }}" class="card-img-top" alt="no available"
+    width="200"
+    height="250">
+        <div class="card-body">
+        <p class="card-title">Name: {{ movie.name }}</p>
+        <p class="card-text">Duration: {{ movie.duration }}</p>
+        <p class="card-text">Grade: ${{ movie.grade }}</p>
+        <a href="{{ movie.url }}" class="btn btn-primary">Links</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
