@@ -10,10 +10,4 @@ from django.test import TestCase
 # gffdfggmjkojmko
 
 
-# abcdd
-
-
-
-
-
-## abdc
+# abcdd111eqdeqE1爱我的·
