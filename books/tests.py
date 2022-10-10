@@ -13,3 +13,6 @@ from django.test import TestCase
 
 
 # dfss
+
+def test2():
+    return 1
