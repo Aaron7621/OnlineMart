@@ -6,10 +6,11 @@ from django.test import TestCase
 # aaron 18:52 test
 # adddada
 
-
+def testss():
+    return 0
 # gffdfggmjkojmko
 
 # abtd
 
 
-# dfss
+# dfss啊发发
