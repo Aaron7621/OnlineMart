@@ -14,6 +14,10 @@
     .card-title, .card-text{
       margin-bottom: 1rem;
     }
+    .card-text {
+        font-size: 80%;
+        font-family: "Book Antiqua", serif;
+    }
     #title {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -44,7 +48,7 @@
             <p class="card-title" style = "color: white"> <p class="tile-content">{{ movie.name }}</p></p>
         <p class="card-text" style = "color: white"> Duration: {{ movie.duration }}</p>
         <p class="card-text" style = "color: white"> Grade: {{ movie.grade }}</p>
-        <a href="{{ movie.url }}" class="btn btn-primary">Buy Ticket</a>
+        <a href="{{ movie.url }}" class="btn btn-primary">Buy Tickets</a>
         </div>
     </div>
 </div>
