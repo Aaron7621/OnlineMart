@@ -25,6 +25,9 @@
         font-weight: bold;
         color: coral;
     }
+    .bottem-link{
+        margin-bottom: 40px;
+    }
     </style>
 <h1 id="title"> Movie in Singapore</h1>
 <!-- <br>
@@ -41,12 +44,11 @@
             <p class="card-title" style = "color: white"> <p class="tile-content">{{ movie.name }}</p></p>
         <p class="card-text" style = "color: white"> Duration: {{ movie.duration }}</p>
         <p class="card-text" style = "color: white"> Grade: {{ movie.grade }}</p>
-        <a href="{{ movie.url }}" class="btn btn-primary">Links</a>
+        <a href="{{ movie.url }}" class="btn btn-primary">Buy Ticket</a>
         </div>
     </div>
 </div>
 {% endfor %}
 </div>
-<hr>
-<a href = "http://127.0.0.1:8000/about-us">back to about us</a>
+<div class="bottem-link"><a href = "http://127.0.0.1:8000/about-us">back to about us</a></div>
 {% endblock %}
