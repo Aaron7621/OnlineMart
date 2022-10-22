@@ -2,6 +2,15 @@
 {% block content %}
     <body style="background-color: #445c72 ;">
   </body>
+    <style>
+    .col{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .card-title, .card-text{
+      margin-bottom: 1rem;
+    }
+    </style>
 <h1> Movie in Singapore</h1>
 <!-- <br>
 <br> -->
@@ -9,12 +18,12 @@
 <div class="row">
 {% for movie in movies %}
 <div class="col">
-    <div class="card" style="width: 14rem">
+    <div class="card" style="width: 14rem; height: 32rem">
     <img src="{{ movie.poster_url }}" class="card-img-top" alt="no available"
     width="200"
     height="300">
         <div class="card-body" style="background-color:#1b1b1b">
-        <p class="card-title" style = "color: white"> Name: {{ movie.name }}</p>
+        <p class="card-title" style = "color: white"> Name<br/>{{ movie.name }}</p>
         <p class="card-text" style = "color: white"> Duration: {{ movie.duration }}</p>
         <p class="card-text" style = "color: white"> Grade: {{ movie.grade }}</p>
         <a href="{{ movie.url }}" class="btn btn-primary">Links</a>
