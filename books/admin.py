@@ -7,4 +7,4 @@ class BookAdmin(admin.ModelAdmin):
     list_display = ('name', 'price')
 
 
-admin.site.register(Book, BookAdmin)
+# admin.site.register(Book, BookAdmin)
